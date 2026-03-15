@@ -469,3 +469,50 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .me-1 {
     color: #073d8b;
 }
+.stats {
+  padding: 60px 0;
+}
+
+.stats .stats-item {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.stats .stats-item:hover {
+  transform: translateY(-8px);
+}
+
+.stats .stats-item i {
+  font-size: 40px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.stats .stats-item span {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  display: block;
+}
+
+.stats .stats-item p {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #777;
+}
+
+.color-blue { color: #0d6efd; }
+.color-orange { color: #fd7e14; }
+.color-green { color: #198754; }
+.color-pink { color: #d63384; }
+
+.d-flex{
+    justify-content: center !important;
+}
+.marginleft{
+    margin-left: 47px;
+}
