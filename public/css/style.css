@@ -627,7 +627,7 @@ h1,
     line-height: 1.6;
 }
 
-@media (max-width: 576px) {
+@media (max-width:770px) {
 
     .profile-img {
         position: relative !important;
