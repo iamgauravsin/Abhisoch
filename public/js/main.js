@@ -51,6 +51,33 @@
         dotsData: true,
     });
 
-    
+    // Footer water sheen
+    $('.footer').each(function () {
+        var $footer = $(this);
+
+        if (!$footer.find('.footer-wave-sheen').length) {
+            $footer.prepend('<span class="footer-wave-sheen" aria-hidden="true"></span>');
+        }
+    });
+
+    // Whole-page click drop effect
+    var $dropLayer = $('<div class="page-drop-layer" aria-hidden="true"></div>');
+    $('body').append($dropLayer);
+
+    $(document).on('click', function (event) {
+        var $drop = $('<span class="page-drop" aria-hidden="true"></span>');
+
+        $drop.css({
+            left: event.clientX,
+            top: event.clientY
+        });
+
+        $dropLayer.append($drop);
+
+        window.setTimeout(function () {
+            $drop.remove();
+        }, 1350);
+    });
+
 })(jQuery);
 
